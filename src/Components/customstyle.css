@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* This is for Header */
+.logo {
+    height: 100px;
+    width: 111px;
+    border-radius: 50%;
+    background-image: url("../images/e-commerce logo.jpg");
+    background-size: cover;
+    position: relative;
+    top: -24px;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.divider {
+    width: 100%;
+    height: .5px;
+    background: #e2e2e2;
+}
+
+.productdetail {
+    margin-right: 12px;
+}
+
+.menu-option {
+    margin-left: 34%;
+    flex: 1;
+    padding: 10px;
+}
+
+
+.pagination {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.list-item {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.list-item th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.list-item th {
+    background-color: #f2f2f2;
+}
+
+.list-item tr:hover {
+    background-color: #f5f5f5;
+}
+
+.order-menu {
+    margin-left: 75%;
+}
+
+#qty[type="number"] {
+    width: 80px;
+    border: 1px solid rgb(57, 50, 50);
+}
+
+#qty:hover {
+    background-color: #ffffff;
+}
+
+#button {
+    width: 80px;
+}
+
+#total-price:hover {
+    background-color: #325a30;
+    color: #ffffff;
+}
+
+#total-price {
+    margin-top: 2%;
+    width: 85%;
+    padding: 3px;
+}
+
+.category {
+    margin-left: 100px;
+    margin-top: 2px;
+}
+
+.login {
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 7%;
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.forget-password {
+    text-decoration: none;
+    color: black;
+    padding-left: 32%;
+}
+
+.login input {
+    font-family: 'FontAwesome';
+}
+
+.btn-size {
+    width: 120px;
+}
+
+.productDetails {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+}
+
+
+.productcategory {
+    display: flex;
+    align-items: center;
+}
+
+.filter {
+    margin-left: 8%;
+    width: 320px;
+}
+
+.price {
+    padding-left: 28%;
+
+}
+
+#filter-input {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+#filter-input:hover,
+#filter-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#label-filter {
+    font-weight: bold;
+}
+
+.full-screen-container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.purchase-order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.purchase-order-table th,
+.purchase-order-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.purchase-order-table th {
+    background-color: #f2f2f2;
+}
+
+.purchase-order-table input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.purchase-order-table button {
+    margin-top: 10px;
+}
+.addProduct {
+    color: blue;
+   padding-top: 10px;
+    padding-left: 90%;
+    font-weight: 2.5rem;
+}
+#language {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.detail-row {
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+/* confirm Order */
+.Order {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 7%;
+    background-color: #f5f5f5;
+    color: #000000;
+}
+#order-value {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.buttonOrder {
+    margin-left: 50px;
+}
+.problem {
+    margin-top: 20px;
+    margin-left: 5%;
+}
+.query-input {
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 300px;
+}
+.querybutton {
+    margin-top: 10px;
+    width: 80px;
+    height: 35px;
+}
