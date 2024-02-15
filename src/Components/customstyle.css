@@ -7,12 +7,11 @@ body {
 /* This is for Header */
 .logo {
     height: 100px;
-    width: 111px;
-    border-radius: 50%;
-    background-image: url("../images/e-commerce logo.jpg");
+    width: 300px;
+    background-image: url("../images/logo.jpg");
     background-size: cover;
     position: relative;
-    top: -24px;
+    top: -27px;
 }
 
 .header {
@@ -245,4 +244,18 @@ td {
     margin-top: 10px;
     width: 80px;
     height: 35px;
+}
+/* for the images */
+.circule {  
+    height: 150px;
+    width: 200px;
+    background-image: url("../images/circule.jpg");
+    background-size: cover;
+}
+.graph {
+    margin-top: 5%;
+    height: 150px;
+    width: 200px;
+    background-image: url("../images/graph.jpg");
+    background-size: cover;
 }

@@ -57,6 +57,14 @@ const MainHeaderContent = () => {
                         <Col md='8'>
                             <DetailBody />
                         </Col>
+                        <Col md='2'>
+                            <div className="circule">
+
+                            </div>
+                            <div className="graph">
+
+                            </div>
+                        </Col>
                     </Row>
                     <div className="problem">
                         <Label>*Are you facing any problem?</Label>
