@@ -7,7 +7,7 @@ import DetailBody from './DetailBody';
 import { Col, Row, Input, Button, Label } from 'reactstrap';
 import DtHdAdd from './DtHdAdd';
 import ConfirmOrder from './ConfirmOrder';
-
+import PurchaseHistory from './PurchaseHistory';
 const MainHeader = () => {
     return (
         <GlobalProvider>
@@ -21,10 +21,15 @@ const MainHeaderContent = () => {
     const { globalConfirmProduct } = useGlobals();
     const [showQueryInput, setShowQueryInput] = useState(false);
     const [query, setQuery] = useState('');
+    const {gPurchaseHistory, setGPurchaseHistory} = useGlobals();
 
     const handleAddProduct = () => {
         setGlobalAddProduct(true);
     };
+
+    const handlePurchaseHistory = () => {
+        setGPurchaseHistory(true);
+    }
 
     const handleYesClick = () => {
         setShowQueryInput(true);
@@ -45,10 +50,12 @@ const MainHeaderContent = () => {
         <>
             {globalAddProduct && <DtHdAdd />}
             {globalConfirmProduct && <ConfirmOrder />}
-            {!globalAddProduct && !globalConfirmProduct && (
+            {gPurchaseHistory && <PurchaseHistory />}
+            {!globalAddProduct && !globalConfirmProduct && !gPurchaseHistory && (
                 <>
                     <Header />
                     <button className="addProduct" onClick={handleAddProduct}>Add More Product</button>
+                    <button className="addProduct" onClick={handlePurchaseHistory}>Purchase History</button>
                     <Categories />
                     <Row style={{ marginTop: 30 }}>
                         <Col md='2'>
@@ -86,3 +93,4 @@ const MainHeaderContent = () => {
 };
 
 export default MainHeader;
+

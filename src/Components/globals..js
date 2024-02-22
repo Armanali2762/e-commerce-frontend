@@ -9,10 +9,11 @@ export const GlobalProvider = ({ children }) => {
   const [globalProduct, setGlobalProduct] = useState(null);
   const [globalAddProduct, setGlobalAddProduct] = useState(false);
   const [globalConfirmProduct, setGlobalConfirmProduct] = useState(false);
-  const [gSelectColor, setGSelectColor]=useState(null);
-  const [gBridge, setGBridge]=useState(null);
-  const [gQty, setGQty]=useState(null);
-  const [gValue, setGValue]=useState(null);
+  const [gSelectColor, setGSelectColor] = useState(null);
+  const [gBridge, setGBridge] = useState(null);
+  const [gQty, setGQty] = useState(null);
+  const [gValue, setGValue] = useState(null);
+  const [gPurchaseHistory, setGPurchaseHistory] = useState(false);
   // Method to update global category state
   const updateGlobalCategory = (value) => {
     setGlobalCategory(value);
@@ -21,6 +22,8 @@ export const GlobalProvider = ({ children }) => {
   // Return the provider with the global state and methods
   return (
     <GlobalContext.Provider value={{
+      gPurchaseHistory,
+      setGPurchaseHistory,
       setGValue,
       gValue,
       gQty,
